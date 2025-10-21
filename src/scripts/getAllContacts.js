@@ -1,3 +1,9 @@
-export const getAllContacts = async () => {};
+import { readContacts } from "../utils/readContacts.js";
+/*import { writeContacts } from "../utils/writeContacts.js";
+import { createFakeContact} from "../utils/createFakeContact.js";*/
+
+export const getAllContacts = async () => {
+    return await readContacts();
+};
 
 console.log(await getAllContacts());
